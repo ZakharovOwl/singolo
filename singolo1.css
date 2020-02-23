@@ -188,7 +188,9 @@
     padding-top: 53px;
     padding-bottom: 58px;
   }
-  
+  .slider-text-none {
+      display: none;
+  }
   section.slider > button,
   section.slider > .images-phone,
   section.slider > .images-phone > img {
