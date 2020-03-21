@@ -8,35 +8,51 @@
     <title>Singolo</title>
 </head>
 <body>
-    <div class="header-block">
+    <div  class="header-block">
       <header>
         <h1 class="logo"><a href="#">Singolo</a><span>*</span></h1>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </header>
     </div>
 
-    <div class="slider-block">
+    <div id="Home" class="slider-block">
       <section class="slider">
+
         <h2 class="slider-text-none">Slider Singolo</h2>
-        <button class="button left" type="button" aria-label="Slide previous"></button>
-        <div class="images-phone">
-          <img width="240" height="483" src="assets/iphone-yellow.png" alt="iPhone yellow">
-          <img width="484" height="240" src="assets/iphone-blue.png" alt="iPhone blue">
+        
+        <button id="btn-left" class="control button left arrow lefT" type="button" aria-label="Slide previous"></button>
+        
+        <div class="carousel">
+        <div class="items-container">
+        <div class="item active">
+        <div class="images-phone description">
+          <img class="iphone1" width="240" height="483" src="assets/iphone-yellow.png" alt="iPhone yellow">
+          <img class="iphone2" width="484" height="240" src="assets/iphone-blue.png" alt="iPhone blue">
         </div>
-  
-        <button class="button right" type="button" aria-label="Slide next"></button>
+      </div>
+
+      <div class="item">
+        <div class="images-phone description">
+          <img class="img2" width="517" height="513" src="assets/iphone2.png" alt="iPhone Second">
+        </div>
+      </div>
+      <button id="btn-right" class="control button right arrow righT" type="button" aria-label="Slide next"></button>
+      
+        
+      </div>
+      </div>
       </section>
     </div>
   
-    <div class="services-block">
+    <div id="Services" class="services-block">
 
       <section class="services">
         <h2>Our Services</h2>
@@ -72,7 +88,7 @@
     </div>
   
 
-    <section class="portfolio-block">
+    <section id="Portfolio" class="portfolio-block">
         <div class="wrapper">
           <h2>Portfolio</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
@@ -100,7 +116,7 @@
         </div>
       </section>
     
-      <section class="block-about-us">
+      <section  id="About" class="block-about-us">
         <div class="wrapper">
           <h2>About Us</h2>
           <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -151,7 +167,7 @@
         </div>
       </section>
 
-      <div class="contacts-block">
+      <div id="Contact" class="contacts-block">
         <div class="wrapper">
           <h2>Get a Quote</h2>
           <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -190,5 +206,7 @@
           </div>
         </div>
       </footer>
+
+      <script src="./script.js"></script>
   </body>
 </html>
