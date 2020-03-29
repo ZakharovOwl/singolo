@@ -27,12 +27,18 @@ function nextItem(n) {
 	hideItem('to-left');
 	changeCurrentItem(n + 1);
 	showItem('from-right');
+	const homeEl = document.getElementById('Home');
+	homeEl.classList.toggle('red');
+	homeEl.classList.toggle('blue');
 }
 
 function previousItem(n) {
 	hideItem('to-right');
 	changeCurrentItem(n - 1);
 	showItem('from-left');
+	const homeEl = document.getElementById('Home');
+	homeEl.classList.toggle('blue');
+	homeEl.classList.toggle('red');
 }
 
 document.querySelector('.control.lefT').addEventListener('click', function() {
